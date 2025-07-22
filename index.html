@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Coding Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: transparent;
+      animation: fadeIn 1.2s ease-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #00d4ff;
+    }
+    header p {
+      margin-top: 1rem;
+      font-weight: 300;
+      color: #b0e0e6;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .project {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.8s ease-out both;
+    }
+    .project:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+    }
+    .project h2 {
+      color: #00d4ff;
+      margin-bottom: 1rem;
+    }
+    .project p {
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #a0aec0;
+      animation: fadeIn 1.5s ease-out;
+    }
+    a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nate Karabensh</h1>
+    <p>Creative C++ Developer | System Design Enthusiast | Builder of Efficient Solutions</p>
+  </header>
+
+  <section>
+    <div class="project">
+      <h2>Domain Blocking Engine (C++)</h2>
+      <p>Designed a cross-platform domain blocking solution using C++, JSON configuration, and unit tests to handle thousands of rule entries with performance and precision.</p>
+    </div>
+    <div class="project">
+      <h2>Embedded RTOS Sensor Monitor</h2>
+      <p>Built an embedded project using STM32 and FreeRTOS for real-time temperature and light sensing, including OLED display output and task prioritization.</p>
+    </div>
+    <div class="project">
+      <h2>TrainingPeaks Workout Generator</h2>
+      <p>Automated generation of structured .FIT workout files from CSV/text input to simplify multi-sport training plan creation for triathletes using Python and FIT SDK.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nate Karabensh | <a href="mailto:natekarabensh@gmail.com">Contact Me</a>
+  </footer>
+</body>
+</html>
